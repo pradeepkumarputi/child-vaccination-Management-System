@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    background-color: #edf2ee;
+    color: rgb(11, 10, 10);
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.logo h1{
+    margin: 0;
+    font-size: 22px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(13, 13, 13);
+    text-decoration: none;
+}
+
+main{
+    width: 100%;
+    height: 83%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(image1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 25s infinite ease-in-out;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+}
+.content h1{
+    color: #1d0303;
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+.content h1 span{
+    color: #111;
+}
+.content p{
+    font-size: 20px;
+}
+.content a{
+    background: transparent;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #111;
+    border: 2px solid rgb(19, 19, 19);
+    border-radius: 20px;
+}
+.content a:hover{
+    background: #0a9c1b;
+    color: #fff;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(image1.jpg);
+    }
+    20%
+    {
+        background-image: url(image2.png);
+    }
+    40%
+    {
+        background-image: url(image3.png);
+    }
+    60%
+    {
+        background-image: url(image4.png);
+    }
+    80%
+    {
+        background-image: url(image5.png);
+    }
+    100%
+    {
+        background-image: url(image1.jpg);
+    }
+}
+
+
+
+footer {
+    background-color: #6ba75f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
